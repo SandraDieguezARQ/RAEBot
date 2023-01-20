@@ -1,0 +1,29 @@
+{
+  "name": "raebot",
+  "version": "1.0.0",
+  "description": "Escribes como el culo?... Te pego un timeout hasta que aprendas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyeentProject/RAEBot.git"
+  },
+  "keywords": [
+    "Twitch",
+    "node.js",
+    "chat",
+    "bot"
+  ],
+  "author": "KyeentProject <kyeent@kyeenttv.ml>",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/KyeentProject/RAEBot/issues"
+  },
+  "homepage": "https://github.com/KyeentProject/RAEBot#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "tmi.js": "^1.8.5"
+  }
+}
