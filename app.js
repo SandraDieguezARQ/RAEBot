@@ -27,6 +27,10 @@ const client = new tmi.Client({ //Con esto se conecta
 // Any error found shall be logged out in the console
 client.connect().catch(console.error);
 
+//client.on('connected', () => {
+//    client.say('Connected successfully');
+//});
+
 // We shall pass the parameters which shall be required
 client.on('message', (channel, tags, message, self) => {
     // This logs out all the messages sent on the channel on the terminal
@@ -36,7 +40,10 @@ client.on('message', (channel, tags, message, self) => {
         case message:
             msg = message.toString();
             
-            if (msg.includes('onvre')) {
+            msg.split(" ");
+            
+            // Common Word Errors
+            if (msg.includes(['onvre'])) {
                 client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
                 break;
             }
