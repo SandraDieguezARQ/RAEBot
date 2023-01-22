@@ -33,11 +33,6 @@ client.on('message', (channel, tags, message, self) => {
     console.log(message);
 
     switch (message.toLowerCase()) {
-
-        case '!raebot':
-            client.say(channel, `@${tags.username}: Soy RAEBot, un bot desarrollado por INovomiast!!`);
-            break;
-
         case message:
             msg = message.toString();
             
@@ -60,9 +55,15 @@ client.on('message', (channel, tags, message, self) => {
                 client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
                 break;
             }
-        case '!github':
-            client.say(channel, `@${tags.username}: Mi codigo fuente está en: https://github.com/KyeentProject/RAEBot`);
-            break;
 
+            if (msg.includes('!raebot')) {
+                client.say(channel, `@${tags.username}: Soy RAEBot, un bot desarrollado por INovomiast!!`);
+                break;
+            }
+
+            if (msg.includes('!github')) {
+                client.say(channel, `@${tags.username}: Mi Codigo Fuente: https://github.com/KyeentProject/RAEBot`);
+                break;
+            }
     }       
 });
