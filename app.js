@@ -31,16 +31,16 @@ client.connect().catch(console.error);
 //    client.say('Connected successfully');
 //});
 
+//Is Upper Case String Function
+
 // We shall pass the parameters which shall be required
 client.on('message', (channel, tags, message, self) => {
-    // This logs out all the messages sent on the channel on the terminal
-    console.log(message);
-
-    switch (message.toLowerCase()) {
+    switch (message) {
         case message:
-            msg = message.toString();
+            var msg = message.toString();
             
             msg.split(" ");
+
             
             // Common Word Errors
             if (msg.includes(['onvre'])) {
@@ -72,5 +72,77 @@ client.on('message', (channel, tags, message, self) => {
                 client.say(channel, `@${tags.username}: Mi Codigo Fuente: https://github.com/KyeentProject/RAEBot`);
                 break;
             }
+	
+            if (msg.includes('ke')) {
+            client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+            break;
+            }
+            
+            if (msg.includes('khe')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes('aver')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes('haver')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes('poya')) {
+                client.say(channel, `@${tags.username}: Palabras como esas no deberias usarlas`);
+                break;
+            }
+
+            if (msg.includes('khe')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes('aki')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes('hola')) {
+                client.say(channel, `Pa' tí mi cola!! @${tags.username}`);
+                break;
+            }
+
+            if (msg.includes('vuenas')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes('abe')) {
+                client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+                break;
+            }
+
+            if (msg.includes(13)) {
+                client.say(channel, `Agarramela que me crece!! (Te Falta Semaforo Bro!!) @${tags.username}`);
+                break;
+            }
+
+            if (msg.includes(5)) {
+                client.say(channel, `Por el culo te la hinco!! (Te Falta Semaforo Bro!!) @${tags.username}`);
+                break;
+            }
+
+            
+            if (msg.includes(8)) {
+                client.say(channel, `Por el culo te la entocho!! (Te Falta Semaforo Bro!!) @${tags.username}`);
+                break;
+            }
+
+            if (msg.includes('ZIN TONTERIAS') || msg.includes('zin tonterias')) {
+                client.say(channel, `Zin Tonterias eh!! @${tags.username}`);
+                break;
+            }
+
     }       
 });
