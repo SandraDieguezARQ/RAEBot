@@ -127,13 +127,23 @@ client.on('message', (channel, tags, message, self) => {
                 client.say(channel, `Agarramela que me crece!! (Te Falta Semaforo Bro!!) @${tags.username}`);
                 break;
             }
+	
+	    if (msg.includes("bale")) {
+		client.say(channel, `${tags.username}:Escribe bien, que te estoy mirando!!`);
+		break;
+	    }
 
             if (msg.includes(5)) {
                 client.say(channel, `Por el culo te la hinco!! (Te Falta Semaforo Bro!!) @${tags.username}`);
                 break;
             }
 
-            
+	    if (msg.includes('ocico') || msg.includes('oziko') || msg.includes('ozico') || msg.includes('hozico')) {
+		client.say(channel, `@${tags.username}Escribe bien, que te estoy mirando!!`);
+		break;
+	    }
+	    
+
             if (msg.includes(8)) {
                 client.say(channel, `Por el culo te la entocho!! (Te Falta Semaforo Bro!!) @${tags.username}`);
                 break;
@@ -143,6 +153,21 @@ client.on('message', (channel, tags, message, self) => {
                 client.say(channel, `Zin Tonterias eh!! @${tags.username}`);
                 break;
             }
+	    
+	   if (msg.includes('pazo')) {
+		client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+		break;
+	   }
+	   
+	   if (msg.includes('peligrozo')) {
+		client.say(channel, `@${tags.username}: Escribe bien, que te estoy mirando!!`);
+		break;
+	   }
 
-    }       
+	   if(msg.includes('pato') || msg.includes('cuack') || msg.includes('duck')) {
+		client.say(channel, `@${tags.username}: Cuack 🦆`);
+		break;
+	   }
+    }       	
+
 });
